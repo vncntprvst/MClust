@@ -16,9 +16,9 @@ classdef MClustData < handle
         
         % -- fileparts
         TTfn = '';       % file name for tt file
-        TTdn = '';      % directory name for tt file
+        TTdn = 'C:\Data\OpenEphys';      % directory name for tt file
         FDdn = '';        % directory name for fd file
-        TText = '.ntt';
+        TText = {'.ntt';'.continuous'};
         FDext = '.fd';
         
         % -- data

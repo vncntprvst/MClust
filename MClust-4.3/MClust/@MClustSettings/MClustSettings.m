@@ -38,7 +38,7 @@ classdef (Sealed) MClustSettings < handle
         CHDrawingAxisWindow_Pos= [500 200 650 650];
         
         % process
-        NeuralLoadingFunction = 'LoadTT_NeuralynxNT'; % Loading Engine
+        NeuralLoadingFunction = 'LoadTT_openephys'; %'LoadTT_NeuralynxNT'; % Default Loading Engine
         
         FeaturesAvailable = {};
         FeaturesToUse = {'feature_Peak', 'feature_Time'};
@@ -51,7 +51,7 @@ classdef (Sealed) MClustSettings < handle
         StartingClusterType = 'SpikelistCluster';
         
         % load-and-save
-        defaultTText = '.ntt';
+        defaultTText = {'.ntt';'.continuous'};
         defaultFDext = '.fd';
         defaultCLUSText = '.clusters';
         

@@ -37,7 +37,7 @@ function [t, wv] = LoadTT_openephys(fn,records_to_get,record_units)
 %   10-June-2014
 
 % Input argument check
-error(nargchk(1,3,nargin))
+narginchk(1,3)
 switch nargin 
     case 1
         record_units = 0;
