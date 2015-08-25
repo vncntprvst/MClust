@@ -10,7 +10,7 @@ set(self.LoadingEnginePulldown, 'String', self.LoadingEngines, 'Value', self.Loa
 self.FeatureListBoxes.SetLeftList(setdiff(MCS.FeaturesAvailable, MCS.FeaturesToUse));
 self.FeatureListBoxes.SetRightList(MCS.FeaturesToUse);
 
-for iV = 1:MCS.nCh
+for iV = 1:size(self.ChannelValidityButton,2)
     set(self.ChannelValidityButton{iV}, 'Value', MCS.ChannelValidity(iV));
 end
 

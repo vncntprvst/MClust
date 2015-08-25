@@ -53,7 +53,9 @@ if any(needToCalculate)
     else
         disp('Channel number not valid')
         disp(['Processing first ' num2str(size(WV.D,2)) ' channel(s)'])
-        [ChannelValidity,MCS.ChannelValidity] = deal(MCS.ChannelValidity(1:size(WV.D,2)));
+        [ChannelValidity,MCS.nCh] = deal(MCS.ChannelValidity(1:size(WV.D,2)));
+        MCS.ChannelValidity=zeros(4,1);
+        MCS.ChannelValidity(1:MCS.nCh)=1;
     end
 	
 	for iF = 1:nFeat
