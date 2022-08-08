@@ -5,6 +5,10 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+# data samples
+MClust-4.3/Samples-to-test-with
+MClust-4.4/Samples-to-test-with
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
