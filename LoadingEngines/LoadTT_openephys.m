@@ -82,7 +82,6 @@ switch record_units
     otherwise
         error('LoadTT_openephys:inputArg','Record_units should take an integer value from 1 to 5.')
 end
-%if  record_units < 5
-%    t = t(:) * 1e4;   % enforce column vector form; use MClust time stamp convention 
-%end
+if  record_units < 5
+    t = t(:) * 1e4;   % enforce column vector form; use MClust time stamp convention
 end

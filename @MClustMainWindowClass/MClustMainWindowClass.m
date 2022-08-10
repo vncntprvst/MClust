@@ -149,8 +149,7 @@ classdef MClustMainWindowClass < handle
 
             %-----------------------------------------------------
             try  % New Loading Engine functionality ADR 22 Jan 2014
-                % loading engine defines channel validity and expected
-                % extenions
+                % loading engine defines channel validity and expected extension
                 CV = feval(MCS.NeuralLoadingFunction, 'get', 'ChannelValidity');
                 self.SetChannelValidity(CV);
                 fprintf('Channel Validity reset by loading engine.\n');

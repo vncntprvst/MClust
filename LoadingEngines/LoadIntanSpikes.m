@@ -3,7 +3,7 @@ function [varargout] = LoadIntanSpikes(varargin)
 % 
 % INPUT
 %   fname - filename of spikes file
-%   records_to_get - (optional) which spikes to retreive
+%   records_to_get - (optional) which spikes to retrieve
 %   record_units - (optional) code for the format of records_to_get
 %       1 - records_to_get is a timestamp list
 %       2 - records_to_get is a record number list
@@ -31,6 +31,8 @@ if nargin == 1
 elseif nargin == 2
     if strcmp(varargin{1}, 'get')
         switch (varargin{2})
+            case 'ChannelValidity'
+                varargout{1} = [true true true true]; return;
             case 'ExpectedExtension'
                 varargout{1} = '.spikes'; return;
             case 'AverageWaveform_ylim'
