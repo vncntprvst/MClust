@@ -22,6 +22,7 @@ classdef MClustData < handle
         FDext = '.fd';
         
         % -- data
+        Snippets = []; % to bypass loading data files
         Features = {};
         FeatureTimestamps = []; % timestamps
         

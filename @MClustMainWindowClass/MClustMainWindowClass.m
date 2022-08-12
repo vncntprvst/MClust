@@ -184,7 +184,7 @@ classdef MClustMainWindowClass < handle
         function LoadTetrodeData(self,~,~)
             MCD = MClust.GetData();
             MCS = MClust.GetSettings();
-            MCD.LoadTetrodeData(MCS.UseFileDialog);
+            MCD.LoadTetrodeData(MCS.UseFileDialog); 
             self.Redraw()
         end
         
