@@ -6,3 +6,6 @@ MCD = MClust.GetData();
 snippets = MCD.Snippets;
 T=snippets.T;
 WV=snippets.WV;
+
+% convert to tsd object
+% WV = tsd(T, WV);
